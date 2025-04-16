@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yorimichi website</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/works.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'lis6hdy',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <div class="header__inner">
+        <h1 class="header__logo">
+            <a href="../index.html">
+                <img src="../images/titlelogo_grey.png" alt="title_logo">
+            </a>
+        </h1>
+
+        <div class="header__nav">
+            <nav class="header__nav__list">
+                <ul class="li__l">
+                    <li><a href="../index.html#about" class="nav__link">わたしについて</a></li>
+                    <li><a href="../index.html#service" class="nav__link">できること</a></li>
+                    <li><a href="../index.html#works" class="nav__link">作ったもの</a></li>
+                    <li><a href="../index.html#writing" class="nav__link">書いたもの</a></li>
+                </ul>
+                <div class="li__r" >
+                    <a href="#contact" class="nav__link">話をする</a>
+                </div>
+            </nav>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger" id="menu">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <nav class="sp__nav">
+            <div class="sp__nav__inner">
+                <ul class="sp__li__l">
+                    <li><a href="#about">わたしについて</a></li>
+                    <li><a href="#service">できること</a></li>
+                    <li><a href="#works">作ったもの</a></li>
+                    <li><a href="#writing">書いたもの</a></li>
+                    <a class="sp__li__r" href="#contact">話をする</a>
+                </ul>
+                <div class="sp__light">
+                    <img src="../images/light_dark.png" alt="light_on">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="detail__body">
+        <div class="main__image">
+            <img src="../images/logo_yorimichi.png" alt="">
+        </div>
+
+        <div class="text__section">
+            <h2>「yorimichi」</h2> <!-- タイトル-->
+            <p class="detail__text">ロゴデザイン</p> <!-- 説明-->
+            <p class="outline">概要</p>
+
+            <div class="detail__list">
+                <div class="detail__li__l">
+                    <ul>
+                        <li>担当範囲</li>
+                        <li>制作ツール</li>
+                        <li>制作期間</li>
+                        <li>料金</li>
+                        <li>制作意図</li>
+                    </ul>
+                </div>
+                <div class="detail__li__r">
+                    <p>デザイン</p>
+                    <p>Adobe Illustrator</p>
+                    <p>3日</p>
+                    <p>詳細はお問い合わせください。</p>
+                    <p class="long__text">ポートフォリオサイトに使えるよう作成しました。
+                        夜の雰囲気を出そうと月をモチーフにしたり、人と人を繋げられるように「i」のマークが人に見えるようにしています。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub__images">
+
+        </div>
+
+    </div>
+
+    <div class="detail__footer">
+        <ul class="detail__footer__list">
+            <li><a href="works_detail_09.html" class="link__underline__l">← 前の作品</a></li>
+            <li class="jump__works"><a href="works_index.html" class="link__underline">一覧に戻る</a></li>
+            <li><a href="works_detail_11.html" class="link__underline__r">次の作品 →</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("menu").addEventListener("click", function () {
+            this.classList.toggle("z-shape");
+
+        });
+
+        $(function () {
+            // ハンバーガーメニュー
+            $('.hamburger').click(function () {
+                $('.sp__nav').fadeToggle(500);
+                $('.hamburger').toggleClass('open');
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
