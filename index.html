@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yorimichi desigin</title>
+  <link rel="stylesheet" href="css/reset.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "lis6hdy",
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div id="load" class="loading__wrapper">
+    <div class="load__center">
+      <div class="loader"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <div class="sticky__container">
+
+
+
+    <header>
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img src="images/title_logo.png" alt="title_logo" />
+          </a>
+        </h1>
+
+        <div class="header__nav">
+          <nav class="header__nav__list">
+            <ul class="li__l">
+              <li><a href="#about" class="nav__link">わたしについて</a></li>
+              <li><a href="#service" class="nav__link">できること</a></li>
+              <li><a href="#works" class="nav__link">作ったもの</a></li>
+              <li><a href="#writing" class="nav__link">書いたもの</a></li>
+            </ul>
+            <div class="li__r">
+              <a href="#contact" class="nav__link">話をする</a>
+            </div>
+
+          </nav>
+        </div>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger" id="menu">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+        </div>
+
+        <nav class="sp__nav">
+          <div class="sp__nav__inner">
+            <ul class="sp__li__l">
+              <li><a href="#about">わたしについて</a></li>
+              <li><a href="#service">できること</a></li>
+              <li><a href="#works">作ったもの</a></li>
+              <li><a href="#writing">書いたもの</a></li>
+              <a class="sp__li__r" href="#contact">話をする</a>
+            </ul>
+            <div class="sp__light">
+              <img src="images/light_on.png" alt="" />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main__logo">
+      <img src="images/title_logo.png" alt="title_logo" />
+    </div>
+
+    <span class="main__title">
+      <h2>
+        <p>WEB DESIGN PORTFORIO SITE</p>
+      </h2>
+    </span>
+
+    <div class="scroll">
+      <p>SCROLL</p>
+      <img src="images/bar.png" alt="scroll bar" />
+    </div>
+
+
+    <div class="light__container">
+      <div class="light light01">
+        <div class="scroll__circle"></div>
+        <img src="images/light_on.png" alt="light_on" />
+      </div>
+    </div>
+
+    <div class="about__section">
+      <h3 id="about" class="title__jp">わたしについて</h3>
+
+      <p class="title__en">ABOUT</p>
+
+      <img class="prof__img" src="images/profileicon.png" alt="profileicon" />
+      <p class="about__name">Hitomi</p>
+      <p class="about__job">web design / writer</p>
+
+      <div class="about__text">
+        <p>東京都出身。2021年より京都府在住。</p>
+        <p>
+          2018年よりWEBライター・コンテンツ企画者として働き、
+          2025年よりWEBデザイナーとしての活動も始めた。
+        </p>
+      </div>
+
+      <a href="https://www.instagram.com/potaufeu_tbti/" target="_blank">
+        <img class="inst__icon" src="images/instgramicon.png" alt="instgramicon" />
+      </a>
+    </div>
+
+    <div class="light__container2">
+      <div class="light light02 light__dark">
+        <div class="scroll__circle2"></div>
+        <img src="images/light_on.png" alt="light_on" />
+      </div>
+    </div>
+
+    <div class="service__section">
+      <h3 id="service" class="title__jp">できること</h3>
+
+      <p class="title__en">SERVICE</p>
+
+      <div class="service__contents">
+        <div class="service__design">
+          <img class="design__img" src="images/service_mouse.png" alt="service_mouse" />
+          <p class="srv__title">デザイン</p>
+
+          <p class="design__text">
+            丁寧なヒアリングに基づいて、デザインを作成します。サムネイル、バナー画像、アイコン制作などグラフィックについても可能です。
+          </p>
+          <p class="srv__tools">
+            使用ソフト：<br />
+            Illustrator、Photoshop、Figma
+          </p>
+        </div>
+
+        <div class="service__cording">
+          <img class="cording__img" src="images/service_keybord.png" alt="service_keybord" />
+          <p class="srv__title">コーディング</p>
+          <p class="cording__text">
+            デザインに沿ったコーディングを致します。コーポレイトサイトや、ランディングページの実装を行います。
+          </p>
+          <p class="srv__tools">
+            使用言語：<br />
+            HTML、CSS、Javascript
+          </p>
+        </div>
+
+        <div class="service__writing">
+          <img class="writing__img" src="images/service_pen.png" alt="service_pen" />
+          <p class="srv__title">ライティング</p>
+          <p class="writing__text">
+            あたたかみのある文章の作成を得意としています。取材・インタビュー・コラム・エッセイ・コピーライティングなどご相談に基づいて作成いたします。
+          </p>
+          <p class="srv__tools">
+            使用ソフト：<br />
+            Googleドキュメント
+          </p>
+        </div>
+      </div>
+
+      <p class="etc">
+        その他： Slack、Chatwark、Discord、Zoom、Google Meet、Premiere Pro
+      </p>
+    </div>
+
+    <div class="srv__road"></div>
+    <div class="light__container3">
+      <div class="light light03 light__dark">
+        <div class="scroll__circle3"></div>
+        <img src="images/light_on.png" alt="light_on" />
+      </div>
+    </div>
+
+    <div class="works__section">
+      <h3 id="works" class="title__jp">作ったもの</h3>
+
+      <p class="title__en">WORKS</p>
+
+      <div class="works__contents">
+        <a href="works/works_detail_01.html"><img src="images/work_icons/works_icon01.png" alt="" /></a>
+        <a href="works/works_detail_06.html"><img src="images/work_icons/works_icon06.png" alt="" /></a>
+        <a href="works/works_detail_12.html"><img src="images/work_icons/works_icon12.png" alt="" /></a>
+      </div>
+
+      <div class="slider__area">
+        <picture class="slide"><img src="images/work_icons/works_icon01.png" alt="" /></picture>
+        <picture class="slide"><img src="images/work_icons/works_icon06.png" alt="" /></picture>
+        <picture class="slide"><img src="images/work_icons/works_icon12.png" alt="" /></picture>
+        <picture class="slide"><img src="images/work_icons/works_icon02.png" alt="" /></picture>
+        <picture class="slide"><img src="images/work_icons/works_icon03.png" alt="" /></picture>
+      </div>
+
+      <div class="see__more">
+        <a href="works/works_index.html" class="nav__link">もっと見る</a>
+      </div>
+    </div>
+
+    <div class="works__road"></div>
+    <div class="light__container4">
+      <div class="light light04 light__dark">
+        <div class="scroll__circle4"></div>
+        <img src="images/light_on.png" alt="light_on" />
+      </div>
+    </div>
+
+    <div class="writing__section">
+      <h3 id="writing" class="title__jp">書いたもの</h3>
+      <p class="title__en">WRITING</p>
+
+      <div class="writing contents">
+        <div class="taiyaki">
+          <div class="taiyaki__img">
+            <img src="images/writing_taiyaki.png" alt="" />
+          </div>
+          <div class="taiyaki__text">
+            <p class="text__title">
+              いつでも、誰でも。 東京で100年愛されてきたたいやき
+            </p>
+            <p class="text__title">― 麻布十番「浪花家総本店」</p>
+
+            <ul>
+              <li>撮影</li>
+              <li>執筆</li>
+              <li>取材</li>
+            </ul>
+            <p>
+              東京・麻布十番にある老舗たい焼き屋
+              「浪花家総本店」を取材しました。
+            </p>
+
+            <div class="jump">
+              <a href="https://woman.chintai/article/odekake/1385_naniwayasouhonten/" target="_blank"
+                class="link__article">
+                記事を読む →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="essei">
+          <div class="essei__img">
+            <img src="images/writing_artessei.png" alt="" />
+          </div>
+          <div class="essei__text">
+            <p class="text__title">Casieスタッフのアートライフ</p>
+            <p class="text__title">すきなおうちに、少しのスパイスを</p>
+
+            <ul>
+              <li>撮影</li>
+              <li>執筆</li>
+              <li>企画</li>
+            </ul>
+            <p>アート作品を家に迎えた際のことを コラムとして執筆しました。</p>
+            <div class="jump">
+              <a href="https://mook.casie.jp/articles/staffart03" target="_blank" class="link__article">記事を読む →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sanpo">
+          <div class="sanpo__img">
+            <img src="images/writing_artsanpo.png" alt="" />
+          </div>
+          <div class="sanpo__text">
+            <p class="text__title">
+              編集部とめぐる！ アートな散歩
+              【京都岡崎編】
+            </p>
+
+            <ul>
+              <li>撮影</li>
+              <li>執筆</li>
+              <li>企画</li>
+              <li>取材</li>
+            </ul>
+            <p>
+              京都・岡崎エリアのなかから アートにまつわる箇所を
+              リサーチ、取材、執筆を行いました。
+            </p>
+
+            <div class="jump">
+              <a href="https://mook.casie.jp/articles/artsanpo01" target="_blank" class="link__article">記事を読む →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="see__more">
+        <a href="https://yorimichi4632.edire.co/" target="_blank" class="nav__link">もっと見る</a>
+      </div>
+    </div>
+
+    <div class="contact__section">
+      <h3 id="contact" class="title__jp">話をする</h3>
+
+      <p class="contact__title">CONTACT</p>
+      <div class="form">
+        <a href="https://forms.gle/FEpGqzYVAMSdmHr1A" target="_blank" class="nav__link">フォームに入力する</a>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </div>
+
+</body>
+
+<footer>
+  <span class="light__off">
+    <img src="images/light_dark.png" alt="light_off" />
+  </span>
+  <div class="footer__border"></div>
+  <small>2025 © yorimichi desigin </small>
+</footer>
+
+</html>

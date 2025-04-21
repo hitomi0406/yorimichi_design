@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yorimichi website</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/works.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'lis6hdy',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <div class="header__inner">
+        <h1 class="header__logo">
+            <a href="../index.html">
+                <img src="../images/titlelogo_grey.png" alt="title_logo">
+            </a>
+        </h1>
+
+        <div class="header__nav">
+            <nav class="header__nav__list">
+                <ul class="li__l">
+                    <li><a href="../index.html#about" class="nav__link">わたしについて</a></li>
+                    <li><a href="../index.html#service" class="nav__link">できること</a></li>
+                    <li><a href="../index.html#works" class="nav__link">作ったもの</a></li>
+                    <li><a href="../index.html#writing" class="nav__link">書いたもの</a></li>
+                </ul>
+                <div class="li__r" >
+                    <a href="#contact" class="nav__link">話をする</a>
+                </div>
+             
+            </nav>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger" id="menu">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <nav class="sp__nav">
+            <div class="sp__nav__inner">
+                <ul class="sp__li__l">
+                    <li><a href="#about">わたしについて</a></li>
+                    <li><a href="#service">できること</a></li>
+                    <li><a href="#works">作ったもの</a></li>
+                    <li><a href="#writing">書いたもの</a></li>
+                    <a class="sp__li__r" href="#contact">話をする</a>
+                </ul>
+                <div class="sp__light">
+                    <img src="../images/light_dark.png" alt="light_on">
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="works__title">
+        <h3 id="works" class="title__jp">作ったもの</h3>
+
+        <p class="title__en">WORKS</p>
+    </div>
+
+    <div class="works__category__section">
+        <ul class="works__category">
+            <li><input type="radio" name="works__button" id="1" value="all"><label for="1">all</label></li>
+            <li><input type="radio" name="works__button" id="2" value="logo"><label for="2">logo</label></li>
+            <li><input type="radio" name="works__button" id="3" value="web"><label for="3">web</label></li>
+        </ul>
+    </div>
+
+    <div class="worksimg__section">
+        <ul class="works__list">
+            <li class="web works__item01">
+                <a href="works_detail_01.html">
+                    <img src="../images/work_icons/works_icon01.png" alt="works1">
+                </a>
+            </li>
+            <li class="web works__item02">
+                <a href="works_detail_02.html">
+                    <img src="../images/work_icons/works_icon02.png" alt="works2">
+                </a>
+            </li>
+            <li class="logo works__item03">
+                <a href="works_detail_03.html">
+                    <img src="../images/work_icons/works_icon03.png" alt="works3">
+                </a>
+            </li>
+            <li class="web works__item04">
+                <a href="works_detail_04.html">
+                    <img src="../images/work_icons/works_icon04.png" alt="works4">
+                </a>
+            </li>
+            <li class="logo works__item05">
+                <a href="works_detail_05.html">
+                    <img src="../images/work_icons/works_icon05.png" alt="works5">
+                </a>
+            </li>
+            <li class="web works__item06">
+                <a href="works_detail_06.html">
+                    <img src="../images/work_icons/works_icon06.png" alt="works6">
+                </a>
+            </li>
+            <li class="logo works__item07">
+                <a href="works_detail_07.html">
+                    <img src="../images/work_icons/works_icon07.png" alt="works7">
+                </a>
+            </li>
+            <li class="web works__item08">
+                <a href="works_detail_08.html">
+                    <img src="../images/work_icons/works_icon08.png" alt="works8">
+                </a>
+            </li>
+            <li class="logo works__item09">
+                <a href="works_detail_09.html">
+                    <img src="../images/work_icons/works_icon09.png" alt="works9">
+                </a>
+            </li>
+            <li class="logo works__item10">
+                <a href="works_detail_10.html">
+                    <img src="../images/work_icons/works_icon10.png" alt="works10">
+                </a>
+            </li>
+            <li class="logo works__item11">
+                <a href="works_detail_11.html">
+                    <img src="../images/work_icons/works_icon11.png" alt="works11">
+                </a>
+            </li>
+            <li class="web works__item12">
+                <a href="works_detail_12.html">
+                    <img src="../images/work_icons/works_icon12.png" alt="works12">
+                </a>
+            </li>
+            <li class="web works__item13">
+                <a href="works_detail_13.html">
+                    <img src="../images/work_icons/works_icon13.png" alt="works13">
+                </a>
+            </li>
+            <li class="web works__item14">
+                <a href="works_detail_14.html">
+                    <img src="../images/work_icons/works_icon14.png" alt="works14">
+                </a>
+            </li>
+            <li class="logo works__item15">
+                <a href="works_detail_15.html">
+                    <img src="../images/work_icons/works_icon15.png" alt="works15">
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        document.getElementById("menu").addEventListener("click", function () {
+            this.classList.toggle("z-shape");
+
+        });
+
+        $(function () {
+            // ハンバーガーメニュー
+            $('.hamburger').click(function () {
+                $('.sp__nav').fadeToggle(500);
+                $('.hamburger').toggleClass('open');
+            });
+        });
+
+
+        // カテゴリー分け
+        $(function () {
+            let $filteringBtn = $(".works__category__section input"),
+                $image = $(".works__list li");
+            $filteringBtn.click(function () {
+                let target = $(this).attr("value");
+                $image.each(function () {
+                    $(this).animate({
+                        "opacity": 0
+                    }, 300, function () {
+                        $(this).hide();
+                        if ($(this).hasClass(target) || target == "all") {
+                            $(this).show();
+                            $(this).animate({
+                                "opacity": 1
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
+
+
+</body>
+
+<footer>
+    <span class="light__off">
+        <img src="../images/light_dark.png" alt="light_off" />
+    </span>
+    <div class="footer__border"></div>
+    <small>2025 © yorimichi desigin </small>
+</footer>
+
+
+</html>
