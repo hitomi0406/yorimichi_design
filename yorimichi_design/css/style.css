@@ -558,6 +558,17 @@ h2 p {
   border-radius: 50px;
   background-color: #ffffff;
   text-align: center;
+  position: relative;
+}
+
+.form a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 720px;
+  height: 92px;
+  border-radius: 50px;
 }
 
 footer {
@@ -628,6 +639,20 @@ h3 {
   border-radius: 50px;
   background-color: #ffffff;
   text-align: center;
+}
+
+.see__more a{
+  position: relative;
+}
+
+.see__more a:after {
+  content: "";
+  position: absolute;
+  right: -84px;
+  top: -32px;
+  width: 272px;
+  height: 92px;
+  border-radius: 50px;
 }
 
 .light01::before {
@@ -802,6 +827,7 @@ a.link__article:hover {
 
 
 
+
 /* レスポンシブスマホサイズ */
 @media screen and (max-width: 960px) {
   .header__nav {
@@ -844,7 +870,7 @@ a.link__article:hover {
   }
 
   .line {
-    width: 100%;
+    width: 40px;
     height: 5px;
     background-color: #fff;
     border-radius: 3px;
@@ -852,6 +878,7 @@ a.link__article:hover {
   }
 
   #line1 {
+    width: 25px;
     position: relative;
   }
 
@@ -859,12 +886,14 @@ a.link__article:hover {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
+    right: -15px;
     /* 切れ目の位置 */
-    width: 5px;
+    width: 10px;
     height: 100%;
-    background: grey;
+    background: #fff;
+    border-radius: 3px;
   }
+
 
   .z-shape #line1 {
     transform: translateY(-2px);
@@ -887,7 +916,7 @@ a.link__article:hover {
     z-index: 9993;
     top: 0;
     left: 0;
-    margin-top: 50px;
+    
   }
 
   .sp__nav__inner {
@@ -1077,29 +1106,6 @@ a.link__article:hover {
 
   .jump {
     margin: 0 0 30px;
-  }
-
-  .see__more a {
-    display: block;
-    font-size: 16px;
-    width: 100px;
-    margin: 80px auto;
-    padding: 20px;
-    border: solid 1px #ffffff;
-    border-radius: 35px;
-    background-color: #ffffff;
-    text-align: center;
-  }
-
-  .form a {
-    font-size: 18px;
-    max-width: 250px;
-    margin: 100px auto;
-    padding: 35px 20px;
-    border: solid 1px #ffffff;
-    border-radius: 50px;
-    background-color: #ffffff;
-    text-align: center;
   }
 
   .light::before {

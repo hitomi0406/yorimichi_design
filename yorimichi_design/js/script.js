@@ -21,21 +21,6 @@ window.addEventListener("load", function () {
   }, 2800);
 });
 
-// document.getElementById("menu").addEventListener("click", function () {
-//   this.classList.toggle("z-shape");
-// });
-
-
-
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     if ($(this).scrollTop() > 0) {
-//       $(".header__inner").css("opacity", 0.5);
-//     } else {
-//       $(".header__inner").css("opacity", 1);
-//     }
-//   });
-// });
 
 $(function () {
   // ハンバーガーメニュー
