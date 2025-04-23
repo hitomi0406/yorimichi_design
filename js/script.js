@@ -19,6 +19,29 @@ window.addEventListener("load", function () {
       );
     }
   }, 2800);
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
+  const scrollDistance = isMobile ? 500 : 1000;
+
+  gsap.utils.toArray('.scroll__circle, .scroll__circle2, .scroll__circle3, .scroll__circle4').forEach(el => {
+    gsap.fromTo(el,
+      {scale: 1, opacity: 0},
+      {
+        scale: 120,
+        opacity: 1,
+        duration: 2,
+        ease: 'linear',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 50%', // 画面内に入ってすぐ
+          end: `50% -=${scrollDistance}`,
+          scrub: true
+        }
+      }
+    );
+  });
 });
 
 
