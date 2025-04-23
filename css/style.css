@@ -716,7 +716,7 @@ h3 {
   z-index: 9999;
 }
 
-/* .scroll__circle,
+.scroll__circle,
 .scroll__circle2,
 .scroll__circle3,
 .scroll__circle4 {
@@ -724,7 +724,7 @@ h3 {
   -webkit-animation: entry-anim 2s linear forwards;
   animation: entry-anim 2s linear forwards;
   animation-timeline: view();
-} */
+}
 
 @-webkit-keyframes entry-anim {
   0% {
